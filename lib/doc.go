@@ -4,24 +4,24 @@
 //
 // For a full guide visit http://github.com/wm/jas
 //
-// package main
+//      package main
 //
-// import (
-// 	"net/http"
+//      import (
+//      	"net/http"
 //
-// 	"github.com/wm/jas/lib"
-// )
+//      	"github.com/wm/jas/lib"
+//      )
 //
-// func main() {
-// 	j := jas.NewJas()
-// 	j.RegisterHandlerFunc(jas.PushPayloadLogger)
-// 	j.RegisterHandler(jas.NewFileChangeEmailer(jas.Options{
-// 		Emails: &[]string{"will@example.com", "eliot@example.com"},
-// 		Files:  &[]string{"db/structure.sql", "db/schema.rb"},
-// 	}))
+//      func main() {
+//      	j := jas.NewJas()
+//      	j.RegisterHandlerFunc(jas.PushPayloadLogger)
+//      	j.RegisterHandler(jas.NewFileChangeEmailer(jas.Options{
+//      		Emails: &[]string{"will@example.com", "eliot@example.com"},
+//      		Files:  &[]string{"db/structure.sql", "db/schema.rb"},
+//      	}))
 //
-// 	mux := http.NewServeMux()
-// 	mux.Handle("/", j)
-// 	http.ListenAndServe(":1234", mux)
+//      	mux := http.NewServeMux()
+//      	mux.Handle("/", j)
+//      	http.ListenAndServe(":1234", mux)
 // }
 package jas
