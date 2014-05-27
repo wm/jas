@@ -9,12 +9,12 @@ import (
 // FileChangeEmailer is a handler that captures the files changed and if it
 // finds a match emails the relevant people.
 type FileChangeEmailer struct {
-	opt Options
+	opt FileChangeEmailerOptions
 }
 
 // Options is a struct for specifying configuration options for the
 // FileChangeEmailer jas.Handler
-type Options struct {
+type FileChangeEmailerOptions struct {
 	// Emails is the list of email addresses to mail when a change is
 	// detected
 	Emails *[]string
@@ -24,7 +24,7 @@ type Options struct {
 }
 
 // NewFileChangeEmailer returns a new FileChangeEmailer instance
-func NewFileChangeEmailer(opt Options) *FileChangeEmailer {
+func NewFileChangeEmailer(opt FileChangeEmailerOptions) *FileChangeEmailer {
 	return &FileChangeEmailer{
 		opt: opt,
 	}
