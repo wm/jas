@@ -25,7 +25,7 @@ import (
 func main() {
 	j := jas.NewJas()
 	j.RegisterHandlerFunc(jas.PushPayloadLogger)
-	j.RegisterHandler(jas.NewFileChangeEmailer(jas.Options{
+	j.RegisterHandler(jas.NewFileChangeEmailer(jas.FileChangeEmailerOptions{
 		Emails: &[]string{"will@example.com", "eliot@example.com"},
 		Files:  &[]string{"db/structure.sql", "db/schema.rb"},
 	}))
