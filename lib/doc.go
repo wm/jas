@@ -8,7 +8,6 @@
 //
 //      import (
 //      	"net/http"
-//
 //      	"github.com/wm/jas/lib"
 //      )
 //
@@ -23,5 +22,5 @@
 //      	mux := http.NewServeMux()
 //      	mux.Handle("/", j)
 //      	http.ListenAndServe(":1234", mux)
-// }
+//      }
 package jas
