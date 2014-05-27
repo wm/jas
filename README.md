@@ -1,5 +1,7 @@
 # Jas
 
+[![GoDoc](https://godoc.org/github.com/wm/jas/lib?status.png)](https://godoc.org/github.com/wm/jas/lib)
+
 Captain 'Jas' Hook: A Github Hook handler.
 
 Jas can be included in a net/http server to listen on a path for github webhooks.
