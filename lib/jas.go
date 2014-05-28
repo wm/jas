@@ -20,7 +20,7 @@ type Handler interface {
 
 // HandlerFunc is an adapter to allow the use of ordinary functions as Jas
 // handlers. If f is a function with the appropriate signature, HandlerFunc(f)
-// is a Handler object that calls f.
+// is a Handler object who's HandlePayload method calls f.
 type HandlerFunc func(e []string, p *github.WebHookPayload)
 
 func (h HandlerFunc) HandlePayload(e []string, p *github.WebHookPayload) {
